@@ -1,6 +1,132 @@
 body{
-    background: red;
+   margin:0;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color:#333;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+}
+/*Container*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+/*Intro*/
+.intro{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background:url(assets/images/intro.jpg) center no-repeat;
+background-size:cover;
+}
+.intro__title{
+    font-size: 150px;
+    font-weight:700;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+}
+.intro__title:after{
+    display:block;
+    content:"";
+    height: 3px;
+    width:60px;
+    background-color: #fff;
+    margin:60px auto;
+}
+.intro__inner{
+    width:100%;
+    max-width: 880px;
+    margin:0 auto;
+    text-align: center;
+}
+.intro__suptitle{
+    margin-bottom: 15px;
+    font-size: 75px;
+    font-family: 'Kaushan Script', cursive;
+   
+    color: #fff;
+}
+.header{
+    
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header__inner{
+    padding-top:30px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo{
+    font-size:30px;
+    font-weight: 700;
+    color: #fff;
+}
+/*Nav*/
+nav{
+    display: flex;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.nav__link{
+    text-decoration: none;
+    color: #fff;
+    margin:0 15px;
+}
+.nav__link:hover{
+    border-bottom: 2px solid;
+    color:yellow;
+}
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    border:2px solid #fff;
+    padding:10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+.btn:hover{
+    background: #fff;
+    color:#333;
+}
+.slider{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.intro__item{
+    width:24%;
+    font-size: 18px;
+    color:#fff;
+    text-transform: uppercase;
+    padding: 20px;
+    border-top:3px solid #fff;
+    opacity: 0.7;
+}
+.intro__item.active{
+    opacity:1;
+}
+.slider__num{
+    font-size: 24px;
+    font-weight: 700;
 }
