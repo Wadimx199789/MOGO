@@ -17,6 +17,7 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    text-align:center;
 
 }
 hr{
@@ -172,11 +173,15 @@ nav{
 .section{
     padding:80px 0;
 }
+.section--devices{
+    background:url(assets/images/devices-bg.jpg) center no-repeat;
+    padding-bottom: 0;
+}
 .section__header{
     width:100%;
     max-width: 950px;
-    margin:0 auto 5ss0px;
-    text-align: center;
+    margin:0 auto 50px;
+    
 }
 .section__suptitle{
     font-family: 'Kaushan Script', cursive;
@@ -274,4 +279,19 @@ nav{
 .services__text{
     font-size:15px;
     color:#999;
+}
+.devices{
+    max-width: 600px;
+    width:100%;
+    margin:0 auto;
+    position: relative;
+}
+.devices__item{
+    display:block;
+}
+.devices__item--iphone{
+    position:absolute;
+    bottom: -80px;
+    right: 0;
+
 }
